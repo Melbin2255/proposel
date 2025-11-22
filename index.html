@@ -21,8 +21,8 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            font-size: 12px; /* Optimized base font size */
-            line-height: 1.45; /* Tighter line height */
+            font-size: 12px;
+            line-height: 1.5; /* Increased line-height for better readability */
             background-color: #eef2f6;
             color: var(--text-dark);
             margin: 0;
@@ -33,7 +33,7 @@
         /* --- Main Container --- */
         .proposal-container {
             max-width: 900px;
-            margin: 20px auto;
+            margin: 30px auto; /* More vertical margin */
             background: #ffffff;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             position: relative;
@@ -54,7 +54,7 @@
         .header {
             background: linear-gradient(120deg, #f0fdfa, #f0fdf4);
             color: var(--text-dark);
-            padding: 25px 35px; /* Compact padding */
+            padding: 30px 40px; /* Slightly more padding */
             position: relative;
             border-bottom: 1px solid rgba(0,0,0,0.05);
         }
@@ -68,7 +68,7 @@
 
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 28px;
+            font-size: 30px; /* Slightly larger */
             font-weight: 700;
             letter-spacing: -0.5px;
             color: var(--primary-main);
@@ -79,7 +79,7 @@
 
         .date-badge {
             background: rgba(26, 79, 91, 0.08);
-            padding: 4px 10px;
+            padding: 5px 12px;
             border-radius: 4px;
             font-size: 11px;
             font-weight: 500;
@@ -89,10 +89,10 @@
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 28px; /* Compact H1 */
+            font-size: 30px; /* Slightly larger */
             font-weight: 700;
-            margin: 0 0 4px 0;
-            line-height: 1.1;
+            margin: 0 0 6px 0;
+            line-height: 1.2;
             color: var(--primary-dark);
         }
 
@@ -107,26 +107,26 @@
 
         /* --- Content Layout --- */
         .content-body {
-            padding: 25px 35px; /* Compact body padding */
+            padding: 30px 40px; /* More padding */
         }
 
         /* --- Typography & Headings --- */
         h2 {
-            font-size: 16px;
+            font-size: 17px;
             color: var(--primary-dark);
             text-transform: uppercase;
             letter-spacing: 0.8px;
             font-weight: 700;
-            margin-top: 20px;
-            margin-bottom: 12px;
+            margin-top: 25px; /* More space before heading */
+            margin-bottom: 15px; /* More space after heading */
             border-bottom: 2px solid var(--border-light);
-            padding-bottom: 5px;
+            padding-bottom: 8px;
             display: flex;
             align-items: center;
         }
         
         h2 .icon {
-            margin-right: 8px;
+            margin-right: 10px;
             color: var(--accent-gold);
             font-size: 18px;
         }
@@ -134,23 +134,23 @@
         h3 {
             font-size: 13px;
             color: var(--primary-main);
-            margin: 0 0 4px 0;
+            margin: 0 0 6px 0;
             font-weight: 600;
         }
 
-        p { margin-bottom: 8px; color: var(--text-gray); font-size: 12px; }
+        p { margin-bottom: 15px; color: var(--text-gray); font-size: 12px; } /* Increased margin bottom */
 
         /* --- Objective List --- */
         .objective-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
+            gap: 12px; /* Increased gap */
+            margin-bottom: 20px;
         }
         .objective-item {
             flex: 1 1 45%;
             background: #f8fafc;
-            padding: 8px 12px;
+            padding: 10px 14px; /* Increased padding */
             border-left: 3px solid var(--accent-green);
             font-weight: 500;
             font-size: 12px;
@@ -161,12 +161,12 @@
         .page-table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 15px;
-            font-size: 11px;
+            margin-bottom: 20px;
+            font-size: 12px;
         }
         .page-table th, .page-table td {
             text-align: left;
-            padding: 6px 10px;
+            padding: 8px 12px; /* Increased padding */
             border-bottom: 1px solid var(--border-light);
         }
         .page-table th {
@@ -184,67 +184,67 @@
         .section-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px; /* Tighter grid gap */
-            margin-bottom: 10px;
+            gap: 18px; /* Increased grid gap for better separation */
+            margin-bottom: 15px;
         }
 
         .section-card {
             background: #fff;
             border: 1px solid var(--border-light);
-            padding: 12px; /* Compact card padding */
-            border-radius: 5px;
+            padding: 15px; /* Increased internal padding */
+            border-radius: 6px;
             position: relative;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
 
         .section-number {
             position: absolute;
-            top: -6px;
-            right: -6px;
+            top: -8px;
+            right: -8px;
             background: var(--accent-gold);
             color: white;
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 10px;
+            font-size: 11px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.15);
         }
 
         .section-card ul {
             margin: 0;
             padding-left: 15px;
-            font-size: 11px;
+            font-size: 12px;
             color: var(--text-gray);
         }
-        .section-card ul li { margin-bottom: 2px; }
+        .section-card ul li { margin-bottom: 4px; }
 
         /* --- Comparison Table Styling --- */
         .comparison-preview {
             width: 100%;
-            margin-top: 5px;
+            margin-top: 8px;
             border-collapse: collapse;
-            font-size: 10px;
+            font-size: 11px;
         }
-        .comparison-preview th { background: #f3f4f6; padding: 3px 6px; text-align: left; }
-        .comparison-preview td { border-bottom: 1px solid #eee; padding: 3px 6px; }
+        .comparison-preview th { background: #f3f4f6; padding: 4px 8px; text-align: left; }
+        .comparison-preview td { border-bottom: 1px solid #eee; padding: 4px 8px; }
         .save-highlight { color: var(--accent-green); font-weight: 700; }
 
         /* --- Lead Gen Box --- */
         .lead-gen-box {
             background: #f0fdf4;
             border: 1px solid #bbf7d0;
-            padding: 12px 15px;
+            padding: 15px 20px;
             border-radius: 6px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .lead-gen-header {
             font-weight: 700;
             color: var(--accent-green);
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             font-size: 12px;
@@ -253,15 +253,15 @@
         .cta-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 8px;
         }
         .cta-tag {
             background: #ffffff;
             border: 1px solid #22c55e;
             color: #15803d;
-            padding: 3px 10px;
+            padding: 5px 12px;
             border-radius: 15px;
-            font-size: 10px;
+            font-size: 11px;
             font-weight: 600;
         }
 
@@ -269,8 +269,8 @@
         .footer {
             background: var(--primary-dark);
             color: rgba(255,255,255,0.7);
-            padding: 15px 35px;
-            font-size: 11px;
+            padding: 20px 40px;
+            font-size: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -297,7 +297,7 @@
             .section-grid {
                 display: grid !important;
                 grid-template-columns: 1fr 1fr !important;
-                gap: 12px;
+                gap: 18px; /* Maintain gap in print */
             }
             .footer {
                 position: relative; /* Allow flow */
@@ -314,8 +314,8 @@
         <header class="header">
             <div class="header-top">
                 <div class="logo">
-                    <!-- Placeholder for Logo Image if needed -->
-                    <!-- <img src="logo.png" style="height: 35px; margin-right: 10px;"> -->
+                    <!-- Added Logo Image Back -->
+                    <img src="cavelllogo.png" alt="Cavell" style="height: 40px; margin-right: 15px;">
                     Cavell<span>.</span>
                 </div>
                 <div class="date-badge">Nov 22, 2025</div>
@@ -444,8 +444,6 @@
                 </div>
             </div>
 
-            <!-- REMOVED FORCED PAGE BREAK -->
-
             <!-- 4. Services & Contact Detail -->
             <div class="section">
                 <h2><span class="icon">🧾</span> Deep Dive: Inner Pages</h2>
@@ -484,7 +482,7 @@
                         <span class="cta-tag">WhatsApp Chat</span>
                         <span class="cta-tag">Download Proposal PDF</span>
                     </div>
-                    <p style="margin-top: 10px; margin-bottom: 0; font-size: 11px;">
+                    <p style="margin-top: 15px; margin-bottom: 0; font-size: 11px;">
                     <strong>High-Value Additions:</strong> Live Chat • Service Area Map • Blog/Articles</p>
                 </div>
             </div>
