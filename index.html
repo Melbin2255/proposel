@@ -21,9 +21,9 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            line-height: 1.6;
-            background-color: #eef2f6; /* Screen background */
+            font-size: 13px; /* Reduced base font size slightly */
+            line-height: 1.5; /* Slightly tighter line height */
+            background-color: #eef2f6; 
             color: var(--text-dark);
             margin: 0;
             padding: 0;
@@ -33,7 +33,7 @@
         /* --- Main Container --- */
         .proposal-container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 30px auto; /* Reduced margin */
             background: #ffffff;
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
             position: relative;
@@ -52,108 +52,108 @@
 
         /* --- Header Section --- */
         .header {
-            background: linear-gradient(120deg, #f0fdfa, #f0fdf4); /* Light Mint/Eco Gradient */
-            color: var(--text-dark); /* Changed to dark text */
-            padding: 50px;
+            background: linear-gradient(120deg, #f0fdfa, #f0fdf4); 
+            color: var(--text-dark); 
+            padding: 30px 40px; /* Reduced vertical padding */
             position: relative;
-            border-bottom: 1px solid rgba(0,0,0,0.05); /* Subtle separator */
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
         }
 
         .header-top {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Reduced bottom margin */
         }
 
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 36px;
+            font-size: 32px; /* Slightly smaller logo */
             font-weight: 700;
             letter-spacing: -0.5px;
-            color: var(--primary-main); /* Dark Logo Color */
+            color: var(--primary-main); 
             display: flex;
             align-items: center;
         }
         .logo span { color: var(--accent-gold); }
 
         .date-badge {
-            background: rgba(26, 79, 91, 0.08); /* Dark tint background */
-            padding: 6px 14px;
+            background: rgba(26, 79, 91, 0.08); 
+            padding: 5px 12px; /* Tighter padding */
             border-radius: 4px;
-            font-size: 13px;
+            font-size: 12px; /* Smaller font */
             font-weight: 500;
-            border: 1px solid rgba(26, 79, 91, 0.15); /* Darker border */
-            color: var(--primary-main); /* Dark Text */
+            border: 1px solid rgba(26, 79, 91, 0.15); 
+            color: var(--primary-main); 
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 38px;
+            font-size: 32px; /* Reduced H1 size */
             font-weight: 700;
-            margin: 0 0 10px 0;
+            margin: 0 0 5px 0;
             line-height: 1.2;
-            color: var(--primary-dark); /* Ensure H1 is dark */
+            color: var(--primary-dark); 
         }
 
         .subtitle {
-            font-size: 16px;
+            font-size: 14px; /* Reduced subtitle size */
             opacity: 0.9;
             font-weight: 300;
             margin: 0;
             max-width: 650px;
-            color: var(--text-gray); /* Darker subtitle */
+            color: var(--text-gray); 
         }
 
         /* --- Content Layout --- */
         .content-body {
-            padding: 50px;
+            padding: 30px 40px; /* Tighter content padding */
         }
 
         /* --- Typography & Headings --- */
         h2 {
-            font-size: 20px;
+            font-size: 18px; /* Slightly smaller H2 */
             color: var(--primary-dark);
             text-transform: uppercase;
-            letter-spacing: 1.2px;
+            letter-spacing: 1px;
             font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
+            margin-top: 25px; /* Reduced margin top */
+            margin-bottom: 15px; /* Reduced margin bottom */
             border-bottom: 2px solid var(--border-light);
-            padding-bottom: 10px;
+            padding-bottom: 8px;
             display: flex;
             align-items: center;
         }
         
         h2 .icon {
-            margin-right: 10px;
+            margin-right: 8px;
             color: var(--accent-gold);
-            font-size: 24px;
+            font-size: 20px; /* Smaller icon */
         }
 
         h3 {
-            font-size: 16px;
+            font-size: 14px; /* Smaller H3 */
             color: var(--primary-main);
-            margin: 0 0 8px 0;
+            margin: 0 0 5px 0;
             font-weight: 600;
         }
 
-        p { margin-bottom: 15px; color: var(--text-gray); font-size: 13px; }
+        p { margin-bottom: 10px; color: var(--text-gray); font-size: 13px; }
 
         /* --- Objective List --- */
         .objective-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 30px;
+            gap: 10px; /* Tighter gap */
+            margin-bottom: 20px; /* Reduced margin */
         }
         .objective-item {
             flex: 1 1 45%;
             background: #f8fafc;
-            padding: 15px;
+            padding: 10px 15px; /* Tighter padding */
             border-left: 4px solid var(--accent-green);
             font-weight: 500;
-            font-size: 14px;
+            font-size: 13px;
             color: var(--primary-dark);
         }
 
@@ -161,12 +161,12 @@
         .page-table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 30px;
-            font-size: 13px;
+            margin-bottom: 20px; /* Reduced margin */
+            font-size: 12px; /* Smaller table text */
         }
         .page-table th, .page-table td {
             text-align: left;
-            padding: 12px 15px;
+            padding: 8px 12px; /* Tighter table padding */
             border-bottom: 1px solid var(--border-light);
         }
         .page-table th {
@@ -184,14 +184,14 @@
         .section-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 30px;
+            gap: 15px; /* Reduced grid gap */
+            margin-bottom: 20px;
         }
 
         .section-card {
             background: #fff;
             border: 1px solid var(--border-light);
-            padding: 20px;
+            padding: 15px; /* Tighter card padding */
             border-radius: 6px;
             position: relative;
             transition: transform 0.2s;
@@ -200,24 +200,24 @@
 
         .section-number {
             position: absolute;
-            top: -10px;
-            right: -10px;
+            top: -8px;
+            right: -8px;
             background: var(--accent-gold);
             color: white;
-            width: 28px;
-            height: 28px;
+            width: 24px; /* Smaller bubble */
+            height: 24px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 11px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         .section-card ul {
             margin: 0;
-            padding-left: 20px;
+            padding-left: 15px;
             font-size: 12px;
             color: var(--text-gray);
         }
@@ -226,9 +226,64 @@
         /* --- Comparison Table Styling --- */
         .comparison-preview {
             width: 100%;
-            margin-top: 10px;
+            margin-top: 8px;
             border-collapse: collapse;
             font-size: 11px;
+        }
+        .comparison-preview th { background: #eee; padding: 4px; text-align: left; }
+        .comparison-preview td { border-bottom: 1px solid #eee; padding: 4px; }
+        .save-highlight { color: var(--accent-green); font-weight: 700; }
+
+        /* --- Lead Gen Box --- */
+        .lead-gen-box {
+            background: #f0fdf4; 
+            border: 1px solid #bbf7d0;
+            padding: 15px 20px; /* Reduced padding */
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .lead-gen-header {
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13px;
+        }
+
+        .cta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px; /* Tighter gap */
+        }
+        .cta-tag {
+            background: #ffffff;
+            border: 1px solid #22c55e;
+            color: #15803d;
+            padding: 4px 10px; /* Smaller tags */
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 20px 40px; /* Reduced footer padding */
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* --- Print & Page Break Logic --- */
+        .page-break {
+            page-break-before: always;
+            margin-top: 30px;
+            display: block;
+            border-top: 1px dashed #ddd; 
+            padding-top: 30px;
         }
         .comparison-preview th { background: #eee; padding: 5px; text-align: left; }
         .comparison-preview td { border-bottom: 1px solid #eee; padding: 5px; }
