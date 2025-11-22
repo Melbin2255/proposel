@@ -8,10 +8,10 @@
     <style>
         /* --- Base & Reset --- */
         :root {
-            --primary-dark: #0f3c47; /* Deepest Teal */
-            --primary-main: #1a4f5b; /* Main Brand Color */
-            --accent-gold: #d4a373; /* Premium Gold/Bronze Accent */
-            --accent-green: #2e7d32; /* Trust/Eco Green */
+            --primary-dark: #0f3c47;
+            --primary-main: #1a4f5b;
+            --accent-gold: #d4a373;
+            --accent-green: #2e7d32;
             --bg-off-white: #fcfcfc;
             --text-dark: #1f2937;
             --text-gray: #4b5563;
@@ -21,9 +21,9 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            font-size: 13px; /* Reduced base font size slightly */
-            line-height: 1.5; /* Slightly tighter line height */
-            background-color: #eef2f6; 
+            font-size: 12px; /* Optimized base font size */
+            line-height: 1.45; /* Tighter line height */
+            background-color: #eef2f6;
             color: var(--text-dark);
             margin: 0;
             padding: 0;
@@ -33,9 +33,9 @@
         /* --- Main Container --- */
         .proposal-container {
             max-width: 900px;
-            margin: 30px auto; /* Reduced margin */
+            margin: 20px auto;
             background: #ffffff;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             position: relative;
         }
 
@@ -46,81 +46,81 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 6px;
+            height: 5px;
             background: linear-gradient(90deg, var(--primary-dark), var(--accent-gold));
         }
 
         /* --- Header Section --- */
         .header {
-            background: linear-gradient(120deg, #f0fdfa, #f0fdf4); 
-            color: var(--text-dark); 
-            padding: 30px 40px; /* Reduced vertical padding */
+            background: linear-gradient(120deg, #f0fdfa, #f0fdf4);
+            color: var(--text-dark);
+            padding: 25px 35px; /* Compact padding */
             position: relative;
-            border-bottom: 1px solid rgba(0,0,0,0.05); 
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .header-top {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px; /* Reduced bottom margin */
+            align-items: center;
+            margin-bottom: 15px;
         }
 
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 32px; /* Slightly smaller logo */
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: -0.5px;
-            color: var(--primary-main); 
+            color: var(--primary-main);
             display: flex;
             align-items: center;
         }
         .logo span { color: var(--accent-gold); }
 
         .date-badge {
-            background: rgba(26, 79, 91, 0.08); 
-            padding: 5px 12px; /* Tighter padding */
+            background: rgba(26, 79, 91, 0.08);
+            padding: 4px 10px;
             border-radius: 4px;
-            font-size: 12px; /* Smaller font */
+            font-size: 11px;
             font-weight: 500;
-            border: 1px solid rgba(26, 79, 91, 0.15); 
-            color: var(--primary-main); 
+            border: 1px solid rgba(26, 79, 91, 0.15);
+            color: var(--primary-main);
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 32px; /* Reduced H1 size */
+            font-size: 28px; /* Compact H1 */
             font-weight: 700;
-            margin: 0 0 5px 0;
-            line-height: 1.2;
-            color: var(--primary-dark); 
+            margin: 0 0 4px 0;
+            line-height: 1.1;
+            color: var(--primary-dark);
         }
 
         .subtitle {
-            font-size: 14px; /* Reduced subtitle size */
+            font-size: 13px;
             opacity: 0.9;
-            font-weight: 300;
+            font-weight: 400;
             margin: 0;
             max-width: 650px;
-            color: var(--text-gray); 
+            color: var(--text-gray);
         }
 
         /* --- Content Layout --- */
         .content-body {
-            padding: 30px 40px; /* Tighter content padding */
+            padding: 25px 35px; /* Compact body padding */
         }
 
         /* --- Typography & Headings --- */
         h2 {
-            font-size: 18px; /* Slightly smaller H2 */
+            font-size: 16px;
             color: var(--primary-dark);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
             font-weight: 700;
-            margin-top: 25px; /* Reduced margin top */
-            margin-bottom: 15px; /* Reduced margin bottom */
+            margin-top: 20px;
+            margin-bottom: 12px;
             border-bottom: 2px solid var(--border-light);
-            padding-bottom: 8px;
+            padding-bottom: 5px;
             display: flex;
             align-items: center;
         }
@@ -128,32 +128,32 @@
         h2 .icon {
             margin-right: 8px;
             color: var(--accent-gold);
-            font-size: 20px; /* Smaller icon */
+            font-size: 18px;
         }
 
         h3 {
-            font-size: 14px; /* Smaller H3 */
+            font-size: 13px;
             color: var(--primary-main);
-            margin: 0 0 5px 0;
+            margin: 0 0 4px 0;
             font-weight: 600;
         }
 
-        p { margin-bottom: 10px; color: var(--text-gray); font-size: 13px; }
+        p { margin-bottom: 8px; color: var(--text-gray); font-size: 12px; }
 
         /* --- Objective List --- */
         .objective-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px; /* Tighter gap */
-            margin-bottom: 20px; /* Reduced margin */
+            gap: 8px;
+            margin-bottom: 15px;
         }
         .objective-item {
             flex: 1 1 45%;
             background: #f8fafc;
-            padding: 10px 15px; /* Tighter padding */
-            border-left: 4px solid var(--accent-green);
+            padding: 8px 12px;
+            border-left: 3px solid var(--accent-green);
             font-weight: 500;
-            font-size: 13px;
+            font-size: 12px;
             color: var(--primary-dark);
         }
 
@@ -161,19 +161,19 @@
         .page-table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px; /* Reduced margin */
-            font-size: 12px; /* Smaller table text */
+            margin-bottom: 15px;
+            font-size: 11px;
         }
         .page-table th, .page-table td {
             text-align: left;
-            padding: 8px 12px; /* Tighter table padding */
+            padding: 6px 10px;
             border-bottom: 1px solid var(--border-light);
         }
         .page-table th {
             background-color: var(--primary-main);
             color: white;
             font-weight: 500;
-            width: 30%;
+            width: 25%;
         }
         .page-table td {
             background-color: #fafafa;
@@ -184,85 +184,84 @@
         .section-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px; /* Reduced grid gap */
-            margin-bottom: 20px;
+            gap: 12px; /* Tighter grid gap */
+            margin-bottom: 10px;
         }
 
         .section-card {
             background: #fff;
             border: 1px solid var(--border-light);
-            padding: 15px; /* Tighter card padding */
-            border-radius: 6px;
+            padding: 12px; /* Compact card padding */
+            border-radius: 5px;
             position: relative;
-            transition: transform 0.2s;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            box-shadow: 0 1px 5px rgba(0,0,0,0.03);
         }
 
         .section-number {
             position: absolute;
-            top: -8px;
-            right: -8px;
+            top: -6px;
+            right: -6px;
             background: var(--accent-gold);
             color: white;
-            width: 24px; /* Smaller bubble */
-            height: 24px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 11px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            font-size: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
         }
 
         .section-card ul {
             margin: 0;
             padding-left: 15px;
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-gray);
         }
-        .section-card ul li { margin-bottom: 4px; }
+        .section-card ul li { margin-bottom: 2px; }
 
         /* --- Comparison Table Styling --- */
         .comparison-preview {
             width: 100%;
-            margin-top: 8px;
+            margin-top: 5px;
             border-collapse: collapse;
-            font-size: 11px;
+            font-size: 10px;
         }
-        .comparison-preview th { background: #eee; padding: 4px; text-align: left; }
-        .comparison-preview td { border-bottom: 1px solid #eee; padding: 4px; }
+        .comparison-preview th { background: #f3f4f6; padding: 3px 6px; text-align: left; }
+        .comparison-preview td { border-bottom: 1px solid #eee; padding: 3px 6px; }
         .save-highlight { color: var(--accent-green); font-weight: 700; }
 
         /* --- Lead Gen Box --- */
         .lead-gen-box {
-            background: #f0fdf4; 
+            background: #f0fdf4;
             border: 1px solid #bbf7d0;
-            padding: 15px 20px; /* Reduced padding */
-            border-radius: 8px;
-            margin-top: 15px;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-top: 10px;
         }
         .lead-gen-header {
             font-weight: 700;
             color: var(--accent-green);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 13px;
+            letter-spacing: 0.5px;
+            font-size: 12px;
         }
 
         .cta-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px; /* Tighter gap */
+            gap: 6px;
         }
         .cta-tag {
             background: #ffffff;
             border: 1px solid #22c55e;
             color: #15803d;
-            padding: 4px 10px; /* Smaller tags */
-            border-radius: 20px;
-            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 10px;
             font-weight: 600;
         }
 
@@ -270,8 +269,8 @@
         .footer {
             background: var(--primary-dark);
             color: rgba(255,255,255,0.7);
-            padding: 20px 40px; /* Reduced footer padding */
-            font-size: 12px;
+            padding: 15px 35px;
+            font-size: 11px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -280,64 +279,10 @@
         /* --- Print & Page Break Logic --- */
         .page-break {
             page-break-before: always;
-            margin-top: 30px;
+            margin-top: 20px;
             display: block;
             border-top: 1px dashed #ddd; 
-            padding-top: 30px;
-        }
-        .comparison-preview th { background: #eee; padding: 5px; text-align: left; }
-        .comparison-preview td { border-bottom: 1px solid #eee; padding: 5px; }
-        .save-highlight { color: var(--accent-green); font-weight: 700; }
-
-        /* --- Lead Gen Box --- */
-        .lead-gen-box {
-            background: #f0fdf4; /* Light Green Tint */
-            border: 1px solid #bbf7d0;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .lead-gen-header {
-            font-weight: 700;
-            color: var(--accent-green);
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .cta-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .cta-tag {
-            background: #ffffff;
-            border: 1px solid #22c55e;
-            color: #15803d;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        /* --- Footer --- */
-        .footer {
-            background: var(--primary-dark);
-            color: rgba(255,255,255,0.7);
-            padding: 30px 50px;
-            font-size: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* --- Print & Page Break Logic --- */
-        .page-break {
-            page-break-before: always;
-            margin-top: 40px;
-            display: block;
-            border-top: 1px dashed #ddd; /* Visual separator on screen */
-            padding-top: 40px;
+            padding-top: 20px;
         }
 
         @media print {
@@ -351,19 +296,21 @@
             .page-break {
                 border-top: none;
                 padding-top: 0;
+                margin-top: 0;
             }
             .header {
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
-                color: #fff !important;
             }
-            .section-number {
+            .section-number, .objective-item, .page-table th, .lead-gen-box, .cta-tag, .section-card {
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+                break-inside: avoid;
             }
-            .objective-item, .page-table th, .lead-gen-box, .cta-tag {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
+            .section-grid {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 12px;
             }
             .footer {
                 position: fixed;
@@ -380,7 +327,8 @@
         <header class="header">
             <div class="header-top">
                 <div class="logo">
-                    <img src="cavelllogo.png" alt="Cavell Logo" style="height: 40px; margin-right: 15px;">
+                    <!-- Placeholder for Logo Image if needed -->
+                    <!-- <img src="logo.png" style="height: 35px; margin-right: 10px;"> -->
                     Cavell<span>.</span>
                 </div>
                 <div class="date-badge">Nov 22, 2025</div>
@@ -394,7 +342,7 @@
             <!-- 1. Objective -->
             <div class="section">
                 <h2><span class="icon">📌</span> Project Objective</h2>
-                <p>To design and develop a professional, high-converting solar website for Powersign Kochi that goes beyond information to actively generate sales.</p>
+                <p>To design and develop a professional, high-converting solar website for Powersign Kochi that actively generates sales.</p>
                 <div class="objective-list">
                     <div class="objective-item">Build Trust & Authority</div>
                     <div class="objective-item">Explain Benefits Clearly</div>
@@ -406,7 +354,7 @@
             <!-- 2. Page Structure -->
             <div class="section">
                 <h2><span class="icon">📄</span> Website Architecture (3 Core Pages)</h2>
-                <p>We propose a streamlined 3-page structure. This ensures the website is light, fast, and easy to navigate while containing powerful tools.</p>
+                <p>A streamlined 3-page structure ensures the website is light, fast, and easy to navigate.</p>
                 <table class="page-table">
                     <tr>
                         <th>Page Name</th>
@@ -436,9 +384,9 @@
                     <div class="section-card">
                         <div class="section-number">1</div>
                         <h3>Hero Banner</h3>
-                        <p>High-impact visual with a clear promise.</p>
+                        <p>High-impact visual promise.</p>
                         <ul>
-                            <li>Headline: "Save 70% on Electricity Bills"</li>
+                            <li>Headline: "Save 70% on Electricity"</li>
                             <li><strong>Action:</strong> "Get Free Quote" Button</li>
                         </ul>
                     </div>
@@ -465,18 +413,17 @@
                         <h3>Services Overview</h3>
                         <p>Visual icons for quick navigation.</p>
                         <ul>
-                            <li>Residential Solar Systems</li>
-                            <li>Commercial Solar Solutions</li>
+                            <li>Residential & Commercial Solar</li>
                             <li>Installation & Maintenance</li>
                         </ul>
                     </div>
-                    <div class="section-card" style="border: 2px solid var(--accent-gold);">
+                    <div class="section-card" style="border: 1px solid var(--accent-gold);">
                         <div class="section-number">5</div>
-                        <h3>🔥 Solar Savings Calculator</h3>
+                        <h3>🔥 Savings Calculator</h3>
                         <p>Interactive tool to hook the user.</p>
                         <ul>
                             <li>User enters monthly bill amount.</li>
-                            <li>System calculates estimated savings instantly.</li>
+                            <li>System shows estimated savings.</li>
                         </ul>
                     </div>
                     <div class="section-card">
@@ -510,7 +457,7 @@
                 </div>
             </div>
 
-            <!-- PAGE BREAK FOR PDF/PRINT -->
+            <!-- PAGE BREAK -->
             <div class="page-break"></div>
 
             <!-- 4. Services & Contact Detail -->
@@ -520,9 +467,9 @@
                     <div class="section-card">
                         <h3>Services Page</h3>
                         <ul>
-                            <li><strong>Introduction:</strong> Expertise & Quality assurance.</li>
-                            <li><strong>Residential:</strong> Benefits + Installation process.</li>
-                            <li><strong>Commercial:</strong> Capacity info + Case examples.</li>
+                            <li><strong>Introduction:</strong> Expertise & Quality.</li>
+                            <li><strong>Residential:</strong> Benefits + Process.</li>
+                            <li><strong>Commercial:</strong> Capacity + Case examples.</li>
                             <li><strong>Maintenance:</strong> Warranty timelines.</li>
                             <li><strong>Action:</strong> "Request a Quote" Button.</li>
                         </ul>
@@ -532,8 +479,8 @@
                         <ul>
                             <li><strong>Simple Form:</strong> Name, Number, Avg Bill.</li>
                             <li><strong>Direct Link:</strong> WhatsApp Button.</li>
-                            <li><strong>Info:</strong> Phone (8590719741) & Email.</li>
-                            <li><strong>Location:</strong> Google Map & Office Address.</li>
+                            <li><strong>Info:</strong> 8590719741 & Email.</li>
+                            <li><strong>Location:</strong> Google Map & Address.</li>
                         </ul>
                     </div>
                 </div>
@@ -542,8 +489,7 @@
             <!-- 5. Lead Gen Strategy -->
             <div class="section">
                 <h2><span class="icon">🧲</span> Lead Generation Strategy</h2>
-                <p>We don't just want visitors; we want enquiries. Every page will include these triggers:</p>
-                
+                <p>We want enquiries. Every page will include these triggers:</p>
                 <div class="lead-gen-box">
                     <div class="lead-gen-header">Mandatory Conversion Elements</div>
                     <div class="cta-tags">
@@ -552,11 +498,8 @@
                         <span class="cta-tag">WhatsApp Chat</span>
                         <span class="cta-tag">Download Proposal PDF</span>
                     </div>
-                    <br>
-                    <p style="margin-top: 15px; margin-bottom: 0;"><strong>Optional High-Value Additions:</strong><br>
-                    • Live Chat Integration<br>
-                    • Service Area Map (Show coverage)<br>
-                    • Blog/Articles for SEO Trust</p>
+                    <p style="margin-top: 10px; margin-bottom: 0; font-size: 11px;">
+                    <strong>High-Value Additions:</strong> Live Chat • Service Area Map • Blog/Articles</p>
                 </div>
             </div>
 
@@ -569,19 +512,19 @@
                         <p>We build exclusively with <strong>React.js / Next.js</strong> (Modern Tech) to ensure:</p>
                         <ul>
                             <li><strong>Superior Performance:</strong> Blazing fast load times.</li>
-                            <li><strong>Attractive Design:</strong> Smooth animations & premium feel.</li>
+                            <li><strong>Attractive Design:</strong> Premium animations.</li>
                             <li><strong>Scalability:</strong> Future-proof code structure.</li>
                         </ul>
                     </div>
                     <div class="section-card" style="background: var(--primary-main); color: white;">
                         <h3 style="color: var(--accent-gold);">🟢 The Result</h3>
-                        <p style="color: rgba(255,255,255,0.9);">A 3-page website with multiple interactive tools & strong marketing components, capable of converting website visitors into real solar leads.</p>
+                        <p style="color: rgba(255,255,255,0.9);">A 3-page website with multiple interactive tools & strong marketing components, capable of converting visitors into real solar leads.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Closing -->
-            <div class="section">
+            <div class="section" style="margin-top: 15px;">
                 <p><em>Prepared by Cavell for Powersign Kochi. Ready to convert visitors into clients.</em></p>
             </div>
 
