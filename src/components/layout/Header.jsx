@@ -42,16 +42,13 @@ const HeaderInner = styled.div`
 `;
 
 const Logo = styled(motion.div)`
-  font-family: ${theme.typography.headingFontFamily};
-  font-size: ${theme.typography.fontSizes.xl};
-  font-weight: ${theme.typography.fontWeights.bold};
-  color: ${theme.colors.dejaVuBlue};
-  letter-spacing: ${theme.typography.letterSpacing.wide};
-  text-transform: uppercase;
-  
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  img {
+    height: 50px;
   }
 `;
 
@@ -287,7 +284,7 @@ const Header = () => {
         <Logo 
           variants={logoVariants}
         >
-          <Link to="/">LasWell</Link>
+          <Link to="/"><img src="/images/logo.png" alt="Prosel company logo" /></Link>
         </Logo>
         
         <Nav>

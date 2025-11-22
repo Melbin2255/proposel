@@ -52,11 +52,11 @@
 
         /* --- Header Section --- */
         .header {
-            background-color: var(--primary-main);
-            color: #ffffff;
+            background: linear-gradient(120deg, #f0fdfa, #f0fdf4); /* Light Mint/Eco Gradient */
+            color: var(--text-dark); /* Changed to dark text */
             padding: 50px;
             position: relative;
-            background-image: radial-gradient(circle at top right, rgba(255,255,255,0.05), transparent);
+            border-bottom: 1px solid rgba(0,0,0,0.05); /* Subtle separator */
         }
 
         .header-top {
@@ -71,17 +71,20 @@
             font-size: 36px;
             font-weight: 700;
             letter-spacing: -0.5px;
-            color: #ffffff;
+            color: var(--primary-main); /* Dark Logo Color */
+            display: flex;
+            align-items: center;
         }
         .logo span { color: var(--accent-gold); }
 
         .date-badge {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(26, 79, 91, 0.08); /* Dark tint background */
             padding: 6px 14px;
             border-radius: 4px;
             font-size: 13px;
             font-weight: 500;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(26, 79, 91, 0.15); /* Darker border */
+            color: var(--primary-main); /* Dark Text */
         }
 
         h1 {
@@ -90,6 +93,7 @@
             font-weight: 700;
             margin: 0 0 10px 0;
             line-height: 1.2;
+            color: var(--primary-dark); /* Ensure H1 is dark */
         }
 
         .subtitle {
@@ -98,6 +102,7 @@
             font-weight: 300;
             margin: 0;
             max-width: 650px;
+            color: var(--text-gray); /* Darker subtitle */
         }
 
         /* --- Content Layout --- */
@@ -319,11 +324,14 @@
         <!-- Header -->
         <header class="header">
             <div class="header-top">
-                <div class="logo">Cavell<span>.</span></div>
+                <div class="logo">
+                    <img src="cavelllogo.png" alt="Cavell Logo" style="height: 40px; margin-right: 15px;">
+                    Cavell<span>.</span>
+                </div>
                 <div class="date-badge">Nov 22, 2025</div>
             </div>
-            <h1 style="color: var(--accent-gold);">Powersign Solar</h1>
-            <p class="subtitle" style="opacity: 1;">Comprehensive Digital Strategy & Website Development Proposal<br>Focus: High Conversion, Trust Building & Lead Generation.</p>
+            <h1>Powersign Solar</h1>
+            <p class="subtitle">Professional Website Design & Development Proposal<br>Focus: High Conversion, Trust Building & Lead Generation.</p>
         </header>
 
         <div class="content-body">
@@ -503,11 +511,11 @@
                 <div class="section-grid">
                     <div class="section-card">
                         <h3>Tech Stack</h3>
-                        <p>We suggest <strong>React / Next.js</strong> or <strong>WordPress</strong> (based on budget) to ensure:</p>
+                        <p>We build exclusively with <strong>React.js / Next.js</strong> (Modern Tech) to ensure:</p>
                         <ul>
-                            <li>Fast Loading Speeds</li>
-                            <li>Mobile Responsiveness</li>
-                            <li>SEO-Friendly Structure</li>
+                            <li><strong>Superior Performance:</strong> Blazing fast load times.</li>
+                            <li><strong>Attractive Design:</strong> Smooth animations & premium feel.</li>
+                            <li><strong>Scalability:</strong> Future-proof code structure.</li>
                         </ul>
                     </div>
                     <div class="section-card" style="background: var(--primary-main); color: white;">
