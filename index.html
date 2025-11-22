@@ -277,14 +277,6 @@
         }
 
         /* --- Print & Page Break Logic --- */
-        .page-break {
-            page-break-before: always;
-            margin-top: 20px;
-            display: block;
-            border-top: 1px dashed #ddd; 
-            padding-top: 20px;
-        }
-
         @media print {
             body { background: #fff; }
             .proposal-container {
@@ -292,11 +284,6 @@
                 margin: 0;
                 width: 100%;
                 max-width: 100%;
-            }
-            .page-break {
-                border-top: none;
-                padding-top: 0;
-                margin-top: 0;
             }
             .header {
                 -webkit-print-color-adjust: exact;
@@ -313,8 +300,8 @@
                 gap: 12px;
             }
             .footer {
-                position: fixed;
-                bottom: 0; left: 0; width: 100%;
+                position: relative; /* Allow flow */
+                width: 100%;
             }
         }
     </style>
@@ -457,8 +444,7 @@
                 </div>
             </div>
 
-            <!-- PAGE BREAK -->
-            <div class="page-break"></div>
+            <!-- REMOVED FORCED PAGE BREAK -->
 
             <!-- 4. Services & Contact Detail -->
             <div class="section">
